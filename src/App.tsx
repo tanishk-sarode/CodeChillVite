@@ -8,7 +8,6 @@ const App: React.FC = () => {
   const [theme, setTheme] = useState<'dark' | 'light'>(
     localStorage.getItem('theme') === 'light' ? 'light' : 'dark'
   );
-  const [mode, setMode] = useState<'local' | 'collab'>('local');
   const [showCollabModal, setShowCollabModal] = useState(false);
   const [username, setUsername] = useState(() => localStorage.getItem('username') || '');
   const [roomId, setRoomId] = useState('');

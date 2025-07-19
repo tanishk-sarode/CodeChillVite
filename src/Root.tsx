@@ -15,7 +15,7 @@ const Root: React.FC = () => {
 
   return (
     <Routes>
-      <Route path="/" element={<App theme={theme} setTheme={setTheme} />} />
+      <Route path="/" element={<App />} />
       <Route path="/room/:roomId" element={<Room />} />
     </Routes>
   );

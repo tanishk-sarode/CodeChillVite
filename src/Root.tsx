@@ -4,7 +4,7 @@ import App from './App';
 import Room from './Room';
 
 const Root: React.FC = () => {
-  const [theme, setTheme] = useState(
+  const [theme] = useState(
     () => localStorage.getItem('theme') || 'light'
   );
 

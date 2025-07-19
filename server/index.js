@@ -6,8 +6,7 @@ const { Server } = require('socket.io');
 
 const app = express();
 const server = http.createServer(app);
-const allowedOrigin = process.env.ALLOWED_ORIGIN || '*'; // Set to your Vercel URL in prod
-
+const allowedOrigin = process.env.ALLOWED_ORIGIN || 'https://code-chill-vite.vercel.app'; // Set to your Vercel URL in prod
 const io = new Server(server, {
   cors: {
     origin: allowedOrigin,

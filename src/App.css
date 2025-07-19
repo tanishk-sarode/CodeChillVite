@@ -1,0 +1,98 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: var(--bg);
+  overflow: hidden;
+}
+body {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  transition: all 0.3s ease;
+}
+
+.ide-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  background: var(--bg);
+  color: var(--text);
+}
+.ide-container {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.ide-body {
+  display: flex;
+  flex: 1;
+  gap: 1rem;
+  overflow: hidden;
+  flex-direction: row;
+}
+
+.editor-wrapper {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.editor {
+  flex: 1;
+  border-radius: 8px;
+  overflow: auto;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  border: 1px solid #333;
+  background: var(--code-bg);
+  color: var(--text);
+}
+
+.custom-input {
+  width: 100%;
+  margin-top: 0.5rem;
+  background: var(--code-bg);
+  color: var(--text);
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 0.5rem;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.output-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--output-bg);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.output-box {
+  margin-top: 1rem;
+  white-space: pre-wrap;
+  color: #0f0;
+  font-family: monospace;
+  flex: 1;
+  overflow-y: auto;
+  background: var(--code-bg);
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #222;
+}

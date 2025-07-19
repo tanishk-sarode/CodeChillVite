@@ -1,69 +1,47 @@
-# React + TypeScript + Vite
+# CodeChillVite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A collaborative code editor with real-time chat, input/output sync, and more.
 
-Currently, two official plugins are available:
+## Features
+- Collaborative and local code editing
+- Real-time chat and user list
+- Theme toggle, user count badge, About modal
+- “Clear Output” and “Reset All” buttons
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Local Setup
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Backend
+```bash
+cd server
+cp .env.example .env
+npm install
+npm start
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Frontend
+```bash
+cp .env.example .env
+npm install
+npm run dev
 ```
+
+## Deployment
+
+### Backend (Koyeb)
+- Push to GitHub
+- Create a new Koyeb app from your repo
+- Set environment variables (`PORT`, `ALLOWED_ORIGIN`, etc.)
+- Deploy!
+
+### Frontend (Vercel)
+- Push to GitHub
+- Import project in Vercel
+- Set `VITE_BACKEND_URL` to your Koyeb backend URL
+- Deploy!
+
+## Environment Variables
+
+See `.env.example` for required variables.
+
+## License
+MIT

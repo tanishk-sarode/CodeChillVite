@@ -5,10 +5,11 @@ import { javascript } from '@codemirror/lang-javascript';
 import { python } from '@codemirror/lang-python';
 import { java } from '@codemirror/lang-java';
 import { dracula } from '@uiw/codemirror-theme-dracula';
+import type { CodeEditorProps } from '../types';
 
-export const CodeEditor = ({ code, onChange, language, theme }) => {
+export const CodeEditor: React.FC<CodeEditorProps> = ({ code, onChange, language, theme }) => {
   const getLangExtension = () => {
-    switch (parseInt(language)) {
+    switch (parseInt(language.toString())) {
       case 50:
       case 54:
         return cpp();
@@ -32,4 +33,4 @@ export const CodeEditor = ({ code, onChange, language, theme }) => {
       onChange={(val) => onChange(val)}
     />
   );
-};
+}; 

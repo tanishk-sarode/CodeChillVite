@@ -1,35 +1,27 @@
-import { StrictMode, useEffect, useState } from 'react';
-import { createRoot } from 'react-dom/client';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import App from './App.jsx';
-import Room from './Room.jsx';
+import App from './App';
+import Room from './Room';
 import './index.css';
 
 function Root() {
-  const [theme, setTheme] = useState(
-    () => localStorage.getItem('theme') || 'light'
-  );
-
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-  }, [theme]);
-
   return (
     <Routes>
-      <Route path="/" element={<App theme={theme} setTheme={setTheme} />} />
-      <Route
-        path="/room/:roomId"
-        element={<Room theme={theme} setTheme={setTheme} />}
-      />
+      <Route path="/" element={<App />} />
+      <Route path="/room/:roomId" element={<Room />} />
     </Routes>
   );
 }
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <BrowserRouter>
-      <Root />
-    </BrowserRouter>
-  </StrictMode>
-);
+const rootElement = document.getElementById('root');
+if (!rootElement) {
+  throw new Error('Root element not found');
+}
+
+const root = ReactDOM.createRoot(rootElement);
+root.render(
+  <BrowserRouter>
+    <Root />
+  </BrowserRouter>
+); 

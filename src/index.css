@@ -28,7 +28,6 @@ body {
   padding: 0;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
   display: block;
 }
 
@@ -81,4 +80,22 @@ button:focus-visible {
 
 * {
   box-sizing: border-box;
+}
+
+/* CodeMirror global styles */
+.cm-editor {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.cm-scroller {
+  width: 100% !important;
+}
+
+.cm-content {
+  width: 100% !important;
+}
+
+.cm-line {
+  width: 100% !important;
 }

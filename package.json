@@ -11,12 +11,22 @@
   },
   "dependencies": {
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^6.28.0",
+    "socket.io-client": "^4.8.1",
+    "@uiw/react-codemirror": "^4.22.0",
+    "@codemirror/lang-cpp": "^6.0.2",
+    "@codemirror/lang-javascript": "^6.0.2",
+    "@codemirror/lang-python": "^6.0.2",
+    "@codemirror/lang-java": "^6.0.2",
+    "@uiw/codemirror-theme-dracula": "^4.22.0",
+    "uuid": "^10.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.31.0",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
+    "@types/uuid": "^10.0.0",
     "@vitejs/plugin-react": "^4.6.0",
     "eslint": "^9.31.0",
     "eslint-plugin-react-hooks": "^5.2.0",

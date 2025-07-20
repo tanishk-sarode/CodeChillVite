@@ -31,17 +31,20 @@
 
 ## 🛠️ Tech Stack
 
-This project is built with a modern MERN-like stack, leveraging real-time communication.
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="24"/> **React** (TypeScript)
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg" width="24"/> **Vite**
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="24"/> **Node.js**
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="24"/> **Express**
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" width="24"/> **Socket.IO**
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="24"/> **JavaScript**
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="24"/> **TypeScript**
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="24"/> **Python**
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="24"/> **Java**
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="24"/> **C++**
+- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="24"/> **C**
+- 🏗️ **Judge0 API** (for code execution)
 
-| Category | Technologies |
-|:---|:---|
-| **Frontend** | \<img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg)" width="24"/\> **React** (TypeScript) \<br\> \<img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg)" width="24"/\> **Vite** |
-| **Backend** | \<img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg)" width="24"/\> **Node.js** \<br\> \<img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg)" width="24"/\> **Express** |
-| **Real-time** | \<img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg)" width="24"/\> **Socket.IO** |
-| **Code Execution** | 🏗️ **Judge0 API** (for code compilation and execution) |
-| **Languages** | \<img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg)" width="24"/\> **JavaScript** \<br\> \<img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg)" width="24"/\> **TypeScript** \<br\> \<img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg)" width="24"/\> **Python** \<br\> \<img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg)" width="24"/\> **Java** \<br\> \<img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg)" width="24"/\> **C++** \<br\> \<img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg)" width="24"/\> **C** |
-
------
+---
 
 ## 🧠 How It Works
 

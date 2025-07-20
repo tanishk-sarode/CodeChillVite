@@ -1,4 +1,4 @@
-# CodeChillVite 🚀
+# CodeChill 🚀
 
 [](https://code-chill-vite.vercel.app)
 [](https://opensource.org/licenses/MIT)
